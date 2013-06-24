@@ -1,0 +1,10 @@
+G:\Pierwsze\Pierwsze\bin\Debug\Pierwsze.exe.config
+G:\Pierwsze\Pierwsze\bin\Debug\Pierwsze.exe
+G:\Pierwsze\Pierwsze\bin\Debug\Pierwsze.pdb
+G:\Pierwsze\Pierwsze\obj\Debug\Pierwsze.csprojResolveAssemblyReference.cache
+G:\Pierwsze\Pierwsze\obj\Debug\Pierwsze.Form1.resources
+G:\Pierwsze\Pierwsze\obj\Debug\Pierwsze.Properties.Resources.resources
+G:\Pierwsze\Pierwsze\obj\Debug\Pierwsze.csproj.GenerateResource.Cache
+G:\Pierwsze\Pierwsze\obj\Debug\Pierwsze.exe
+G:\Pierwsze\Pierwsze\obj\Debug\Pierwsze.pdb
+G:\Pierwsze\Pierwsze\obj\Debug\Pierwsze.Nowa_liczba.resources
