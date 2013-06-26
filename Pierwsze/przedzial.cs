@@ -11,10 +11,12 @@ namespace Pierwsze
     {
         public BigInteger poczatek;
         public BigInteger koniec;
+        public bool ostatni;
 
         public przedzial()
         {
             koniec = 0;
+            ostatni = false;
             poczatek = 0;
         }
 
@@ -22,6 +24,7 @@ namespace Pierwsze
         {
             poczatek = start;
             koniec = finish;
+            ostatni = false;
         }
     }
 }

@@ -13,7 +13,7 @@ namespace Pierwsze
     {
 
         private Stopwatch sw = new Stopwatch();
-
+        private object Objekt = new object();
         protected BigInteger liczba;
         protected DateTime czas_dodania;
         protected TimeSpan czas_wykonywania;
@@ -113,6 +113,10 @@ namespace Pierwsze
                 koniec = koniec + skok;
                 if (koniec > liczba) koniec = liczba;
                 przedzial_list.Add(new przedzial(start, koniec));
+                if (i == ile_watkow - 1)
+                {
+                    przedzial_list[i].ostatni = true;
+                }
             }
         }
 
@@ -135,6 +139,13 @@ namespace Pierwsze
                 {
                     if (pierwsza != false)
                     {
+                        if (a.ostatni)
+                        {
+                            lock (Objekt)
+                            {
+
+                            }
+                        }
                         if (liczba % i == 0)
                         {
 

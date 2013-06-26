@@ -84,5 +84,18 @@ namespace Pierwsze
                 
             }
         }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            try
+            {
+                backgroundWorker1.Dispose();
+            }
+            catch
+            {
+            }
+        }
+
+        
     }
 }

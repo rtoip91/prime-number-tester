@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Numerics;
 using System.Text;
@@ -50,6 +51,37 @@ namespace Pierwsze
              {
                  MessageBox.Show("Podano nieprawidłową liczbę");
              }
+         }
+
+        // Wczytywanie z pliku
+         private void button2_Click(object sender, EventArgs e)
+         {
+             string liczba_str =null;
+             
+             DialogResult result = openFileDialog1.ShowDialog(); // Show the dialog.
+             if (result == DialogResult.OK) // Test result.
+             {
+                 string file = openFileDialog1.FileName;
+                 try
+                 {
+                     liczba_str = File.ReadAllText(file);
+                     BigInteger liczba = BigInteger.Parse(liczba_str);
+                     Zadanie zad = new Zadanie(liczba);
+                     zadaniaa.Add(zad);
+                     temporary.odswierz();
+                     Dispose();
+
+                 }
+                 catch (IOException)
+                 {
+                     MessageBox.Show("Nie udało się otworzyć pliku !");
+                 }
+                 catch (FormatException)
+                 {
+                     MessageBox.Show("Błędna zawartość pliku !!");
+                 }
+             }
+            
          }
     }
 }

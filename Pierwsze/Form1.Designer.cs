@@ -42,6 +42,7 @@
             this.Wynik = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Dodaj_Button = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.SuspendLayout();
             // 
             // progressBar1
@@ -92,7 +93,7 @@
             // 
             // Data_Dodania
             // 
-            this.Data_Dodania.Text = "Data Dodania";
+            this.Data_Dodania.Text = "Czas Dodania";
             this.Data_Dodania.Width = 145;
             // 
             // listView2
@@ -161,6 +162,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sprawdzanie Pierwszosci Liczb";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -181,6 +183,7 @@
         private System.Windows.Forms.ColumnHeader CzObliczen;
         private System.Windows.Forms.ColumnHeader Wynik;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker2;
     }
 }
 
