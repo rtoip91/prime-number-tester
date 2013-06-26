@@ -79,6 +79,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Miller.cs" />
     <Compile Include="Nowa_liczba.cs">
       <SubType>Form</SubType>
     </Compile>

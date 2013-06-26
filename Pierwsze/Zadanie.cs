@@ -19,7 +19,12 @@ namespace Pierwsze
         protected TimeSpan czas_wykonywania;
         protected int postep;
         protected String wynik = "pierwsza";
+        protected String algorytm;
 
+        public String get_algorytm()
+        {
+            return algorytm;
+        }
 
         public String get_wynik()
         {
@@ -52,6 +57,7 @@ namespace Pierwsze
             czas_wykonywania = TimeSpan.Zero;
             postep = 0;
             wynik = "pierwsza";
+            algorytm = "Bruteforce";
         }
 
         public Zadanie(BigInteger licz)
@@ -61,6 +67,7 @@ namespace Pierwsze
             czas_wykonywania = TimeSpan.Zero;
             postep = 0;
             wynik = "pierwsza";
+            algorytm = "Bruteforce";
 
         }
 
