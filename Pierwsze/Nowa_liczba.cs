@@ -32,15 +32,33 @@ namespace Pierwsze
 
          private void button1_Click(object sender, EventArgs e)
          {
+             Zadanie zad = null;
              try
              {
                  if (textBox1.Text != string.Empty)
                  {
                      BigInteger liczba = BigInteger.Parse(textBox1.Text);
-                     Zadanie zad = new Zadanie(liczba);
-                     zadaniaa.Add(zad);
-                     temporary.odswierz();
-                     Dispose();
+                     if (comboBox1.SelectedIndex == 0)
+                     {
+                          zad = new Zadanie(liczba);
+                          zadaniaa.Add(zad);
+                          temporary.odswierz();
+                          Dispose();
+                     }
+                     if (comboBox1.SelectedIndex == 1)
+                     {
+                         zad = new Miller(liczba);
+                         zadaniaa.Add(zad);
+                         temporary.odswierz();
+                         Dispose();
+                     }
+                     if (comboBox1.SelectedIndex == -1)
+                     {
+                         MessageBox.Show("Nie wybrano algorytmu");
+                         
+                     }
+
+                     
                  }
                  else
                  {
@@ -66,6 +84,7 @@ namespace Pierwsze
                  {
                      liczba_str = File.ReadAllText(file);
                      BigInteger liczba = BigInteger.Parse(liczba_str);
+                     
                      Zadanie zad = new Zadanie(liczba);
                      zadaniaa.Add(zad);
                      temporary.odswierz();

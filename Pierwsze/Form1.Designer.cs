@@ -35,14 +35,18 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.Liczba = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Data_Dodania = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Algorytm1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.listView2 = new System.Windows.Forms.ListView();
             this.liczb1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.CzDodania = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.CzObliczen = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Algorytm = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Wynik = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Dodaj_Button = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.CleanButton = new System.Windows.Forms.Button();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // progressBar1
@@ -78,7 +82,8 @@
             this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Liczba,
-            this.Data_Dodania});
+            this.Data_Dodania,
+            this.Algorytm1});
             this.listView1.Location = new System.Drawing.Point(26, 26);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(512, 152);
@@ -89,12 +94,16 @@
             // Liczba
             // 
             this.Liczba.Text = "Liczba";
-            this.Liczba.Width = 361;
+            this.Liczba.Width = 301;
             // 
             // Data_Dodania
             // 
             this.Data_Dodania.Text = "Czas Dodania";
             this.Data_Dodania.Width = 145;
+            // 
+            // Algorytm1
+            // 
+            this.Algorytm1.Text = "Algorytm";
             // 
             // listView2
             // 
@@ -103,10 +112,11 @@
             this.liczb1,
             this.CzDodania,
             this.CzObliczen,
+            this.Algorytm,
             this.Wynik});
             this.listView2.Location = new System.Drawing.Point(26, 292);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(512, 180);
+            this.listView2.Size = new System.Drawing.Size(512, 182);
             this.listView2.TabIndex = 6;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
@@ -114,20 +124,26 @@
             // liczb1
             // 
             this.liczb1.Text = "Liczba";
-            this.liczb1.Width = 257;
+            this.liczb1.Width = 221;
             // 
             // CzDodania
             // 
             this.CzDodania.Text = "Czas Dodania";
-            this.CzDodania.Width = 85;
+            this.CzDodania.Width = 86;
             // 
             // CzObliczen
             // 
             this.CzObliczen.Text = "Czas Obliczeń";
-            this.CzObliczen.Width = 85;
+            this.CzObliczen.Width = 73;
+            // 
+            // Algorytm
+            // 
+            this.Algorytm.DisplayIndex = 4;
+            this.Algorytm.Text = "Algorytm";
             // 
             // Wynik
             // 
+            this.Wynik.DisplayIndex = 3;
             this.Wynik.Text = "Wynik";
             this.Wynik.Width = 81;
             // 
@@ -145,11 +161,39 @@
             // 
             this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             // 
+            // CleanButton
+            // 
+            this.CleanButton.Location = new System.Drawing.Point(556, 292);
+            this.CleanButton.Name = "CleanButton";
+            this.CleanButton.Size = new System.Drawing.Size(117, 23);
+            this.CleanButton.TabIndex = 8;
+            this.CleanButton.Text = "Wyczyść";
+            this.CleanButton.UseVisualStyleBackColor = true;
+            this.CleanButton.Click += new System.EventHandler(this.CleanButton_Click);
+            // 
+            // backgroundWorker2
+            // 
+            this.backgroundWorker2.WorkerReportsProgress = true;
+            this.backgroundWorker2.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker2_DoWork);
+            this.backgroundWorker2.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker2_ProgressChanged);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(568, 133);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(695, 510);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.CleanButton);
             this.Controls.Add(this.Dodaj_Button);
             this.Controls.Add(this.listView2);
             this.Controls.Add(this.listView1);
@@ -183,7 +227,11 @@
         private System.Windows.Forms.ColumnHeader CzObliczen;
         private System.Windows.Forms.ColumnHeader Wynik;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Button CleanButton;
+        private System.Windows.Forms.ColumnHeader Algorytm1;
+        private System.Windows.Forms.ColumnHeader Algorytm;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
+        private System.Windows.Forms.Button button1;
     }
 }
 

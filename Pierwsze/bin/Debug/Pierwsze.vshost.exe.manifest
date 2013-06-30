@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Pierwsze.exe" size="863232">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Pierwsze.exe" size="865280">
       <assemblyIdentity name="Pierwsze" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>oIAHerONrsWIO1MXq2PHHNGC4Fgl6N41y1H78MtYdsE=</dsig:DigestValue>
+        <dsig:DigestValue>birZ4ReRhIkIhXnfX84RQ21ALSN7YZVLcv/SVKrfFpM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

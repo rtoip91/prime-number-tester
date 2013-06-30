@@ -148,10 +148,10 @@ namespace Pierwsze
                     {
                         if (a.ostatni)
                         {
-                            lock (Objekt)
-                            {
-
-                            }
+                            BigInteger p1 =(i - a.poczatek);
+                            BigInteger p2 = (a.koniec - a.poczatek);
+                            BigInteger temp_post = (100 * p1 / p2);
+                            postep = (int)temp_post;
                         }
                         if (liczba % i == 0)
                         {
@@ -178,7 +178,7 @@ namespace Pierwsze
 
         virtual public void licz ()
         {
-
+            
             int ilosc_watkow = 4;
             przedzial_list.Clear();
             watki.Clear();
@@ -188,6 +188,8 @@ namespace Pierwsze
             for (int i = 0; i < ilosc_watkow; i++)
             {
                 Thread a = new Thread(Czy_pierwsza);
+                // co by zamknięcie okna mogło ubić wątki które działają
+                a.IsBackground = true;
                 watki.Add(a);
                 watki[i].Start(przedzial_list[i]);
 
@@ -198,7 +200,8 @@ namespace Pierwsze
                 thr.Join();
             }
             sw.Stop();
-            czas_wykonywania = TimeSpan.FromMilliseconds(sw.ElapsedMilliseconds);
+            
+            czas_wykonywania = sw.Elapsed;
             if (pierwsza == true)
             {
                
@@ -211,7 +214,7 @@ namespace Pierwsze
                 
                 wynik = "złożona";
             }
-
+            
 
         }
 
