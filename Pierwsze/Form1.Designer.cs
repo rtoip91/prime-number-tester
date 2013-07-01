@@ -47,6 +47,8 @@
             this.CleanButton = new System.Windows.Forms.Button();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.button1 = new System.Windows.Forms.Button();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // progressBar1
@@ -83,7 +85,8 @@
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Liczba,
             this.Data_Dodania,
-            this.Algorytm1});
+            this.Algorytm1,
+            this.columnHeader1});
             this.listView1.Location = new System.Drawing.Point(26, 26);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(512, 152);
@@ -94,7 +97,7 @@
             // Liczba
             // 
             this.Liczba.Text = "Liczba";
-            this.Liczba.Width = 301;
+            this.Liczba.Width = 243;
             // 
             // Data_Dodania
             // 
@@ -113,7 +116,8 @@
             this.CzDodania,
             this.CzObliczen,
             this.Algorytm,
-            this.Wynik});
+            this.Wynik,
+            this.columnHeader2});
             this.listView2.Location = new System.Drawing.Point(26, 292);
             this.listView2.Name = "listView2";
             this.listView2.Size = new System.Drawing.Size(512, 182);
@@ -124,28 +128,29 @@
             // liczb1
             // 
             this.liczb1.Text = "Liczba";
-            this.liczb1.Width = 221;
+            this.liczb1.Width = 131;
             // 
             // CzDodania
             // 
             this.CzDodania.Text = "Czas Dodania";
-            this.CzDodania.Width = 86;
+            this.CzDodania.Width = 89;
             // 
             // CzObliczen
             // 
             this.CzObliczen.Text = "Czas Obliczeń";
-            this.CzObliczen.Width = 73;
+            this.CzObliczen.Width = 91;
             // 
             // Algorytm
             // 
             this.Algorytm.DisplayIndex = 4;
             this.Algorytm.Text = "Algorytm";
+            this.Algorytm.Width = 64;
             // 
             // Wynik
             // 
             this.Wynik.DisplayIndex = 3;
             this.Wynik.Text = "Wynik";
-            this.Wynik.Width = 81;
+            this.Wynik.Width = 76;
             // 
             // Dodaj_Button
             // 
@@ -186,6 +191,14 @@
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Wątki";
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Wątki";
             // 
             // Form1
             // 
@@ -232,6 +245,8 @@
         private System.Windows.Forms.ColumnHeader Algorytm;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
     }
 }
 

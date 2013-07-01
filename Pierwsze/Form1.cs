@@ -31,6 +31,7 @@ namespace Pierwsze
                 listView1.Items.Add(zad.get_liczba());
                 listView1.Items[listView1.Items.Count - 1].SubItems.Add(zad.get_czasdodania());
                 listView1.Items[listView1.Items.Count - 1].SubItems.Add(zad.get_algorytm());
+                listView1.Items[listView1.Items.Count - 1].SubItems.Add(zad.get_watki());
 
             }
 
@@ -42,6 +43,8 @@ namespace Pierwsze
                 listView2.Items[listView2.Items.Count - 1].SubItems.Add(zad.get_czaswykonywania());
                 listView2.Items[listView2.Items.Count - 1].SubItems.Add(zad.get_algorytm());
                 listView2.Items[listView2.Items.Count - 1].SubItems.Add(zad.get_wynik());
+                listView2.Items[listView2.Items.Count - 1].SubItems.Add(zad.get_watki());
+
             }
         }
 

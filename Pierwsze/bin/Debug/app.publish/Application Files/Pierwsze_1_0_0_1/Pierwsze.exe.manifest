@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Pierwsze.exe" version="1.0.0.1" publicKeyToken="f88f43d48d89fec6" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Pierwsze" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Pierwsze.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Pierwsze.exe" size="866816">
+      <assemblyIdentity name="Pierwsze" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>r1Ib0VwyLnLPkgA9K0ceFMfpmftrjloA1xMz63KT1E4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Pierwsze.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=PiotrekAsus\Piotrek" issuerKeyHash="ba3f7f255694f47d88d43b48c2dea54fac2eb4ad" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>SnD+jsz2LCpQHC3Ym99GdbeKc8VlkRufH458tW3GTw8=</DigestValue></Reference></SignedInfo><SignatureValue>LFEvVRdtXZUKk+v+UP5ECwJKEyKGSaShCviyHBwnOX01LPnHW7akb9RrzTA3T9fdjVu10CTZXT9EYLf/hM+1W/TIbqsQ4AwdtFK8sUiymd3xWj2Drl0O+6vC9Jc+UZ3QAttxZVWOMe1nxlxNIkt2ZZjIzoiFPbOXQx8CCU032BE=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>v+tOX/+lJND/r+4e37IOyiyM/tpAvtN7/nvh5v+gtvwNwhW1hUOYwh2KZKEEJHmIn9iih3ov2GR7VzqxxZDsySG2+z62MB7ArTRyc4AgK71QYC/wcVNY2OchWxzIchi6pPOojCvFVjnekhF5V3yDVv0DRKI5bd5EFhEZRJCoGxM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="0f4fc66db57c8e1f9f1b9165c5738ab77546df9bd82d1c502a2cf6cc8efe704a" Description="" Url=""><as:assemblyIdentity name="Pierwsze.exe" version="1.0.0.1" publicKeyToken="f88f43d48d89fec6" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=PiotrekAsus\Piotrek</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>B1ApsVSKQK6KSSGeolfuqQrx4zS6crfddyAZYGo4cX4=</DigestValue></Reference></SignedInfo><SignatureValue>htNOh6BRuz4HfYN6B5HvkO3UFG2sF/+UoDultxOdR3yjAyxEGYllRN3J+OGFUKVlxRnCM6jwu6TcKmFpH/6itvBPXsUsm5WSd2W4LKqQtxWq2LwC3byr8BfitKtya0hFvLWfDNTpFAKGFNyFQZKLd9ldxNg5jIXKjJYfu/u+tMA=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>v+tOX/+lJND/r+4e37IOyiyM/tpAvtN7/nvh5v+gtvwNwhW1hUOYwh2KZKEEJHmIn9iih3ov2GR7VzqxxZDsySG2+z62MB7ArTRyc4AgK71QYC/wcVNY2OchWxzIchi6pPOojCvFVjnekhF5V3yDVv0DRKI5bd5EFhEZRJCoGxM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB5TCCAU6gAwIBAgIQboSqHSf676VISAxqbeiPOjANBgkqhkiG9w0BAQsFADAxMS8wLQYDVQQDHiYAUABpAG8AdAByAGUAawBBAHMAdQBzAFwAUABpAG8AdAByAGUAazAeFw0xMzA2MjQwODUxMTBaFw0xNDA2MjQxNDUxMTBaMDExLzAtBgNVBAMeJgBQAGkAbwB0AHIAZQBrAEEAcwB1AHMAXABQAGkAbwB0AHIAZQBrMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC/605f/6Uk0P+v7h7fsg7KLIz+2kC+03v+e+Hm/6C2/A3CFbWFQ5jCHYpkoQQkeYif2KKHei/YZHtXOrHFkOzJIbb7PrYwHsCtNHJzgCArvVBgL/BxU1jY5yFbHMhyGLqk86iMK8VWOd6SEXlXfINW/QNEojlt3kQWERlEkKgbEwIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAEs9PGpbB2nRtFT8xN/5DcEluhBmMsiQCdBBH+DjVjZZkUkDp3uW+kXo/eZwUIQOMSoejj5OhsPwsD1xqsW9Dk2FIZgXubpEbM6XKGOlE1nqziyz92wPSaBk9HzJK0ukcqc4uUiG/UPz8ts+WgisNVmmPoYGGGvZlUvi0zQ0XOzl</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

@@ -13,7 +13,6 @@ G:\prime-number-tester\Pierwsze\obj\Debug\Pierwsze.exe
 G:\prime-number-tester\Pierwsze\obj\Debug\Pierwsze.pdb
 G:\prime-number-tester\Pierwsze\bin\Debug\Pierwsze.exe
 G:\prime-number-tester\Pierwsze\bin\Debug\Pierwsze.pdb
-G:\prime-number-tester\Pierwsze\obj\Debug\Pierwsze.csprojResolveAssemblyReference.cache
 G:\prime-number-tester\Pierwsze\obj\Debug\Pierwsze.Form1.resources
 G:\prime-number-tester\Pierwsze\obj\Debug\Pierwsze.Nowa_liczba.resources
 G:\prime-number-tester\Pierwsze\obj\Debug\Pierwsze.Properties.Resources.resources

@@ -40,7 +40,7 @@ namespace Pierwsze
                      BigInteger liczba = BigInteger.Parse(textBox1.Text);
                      if (comboBox1.SelectedIndex == 0)
                      {
-                          zad = new Zadanie(liczba);
+                          zad = new Zadanie(liczba,comboBox2.SelectedIndex+1);
                           zadaniaa.Add(zad);
                           temporary.odswierz();
                           Dispose();
@@ -85,7 +85,7 @@ namespace Pierwsze
                      liczba_str = File.ReadAllText(file);
                      BigInteger liczba = BigInteger.Parse(liczba_str);
                      
-                     Zadanie zad = new Zadanie(liczba);
+                     Zadanie zad = new Zadanie(liczba,4);
                      zadaniaa.Add(zad);
                      temporary.odswierz();
                      Dispose();

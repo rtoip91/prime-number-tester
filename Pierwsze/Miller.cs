@@ -14,7 +14,7 @@ namespace Pierwsze
             algorytm = "Miller";
         }
 
-        public Miller(BigInteger liczba) : base (liczba)
+        public Miller(BigInteger liczba) : base (liczba,4)
         {
             algorytm = "Miller";
         }

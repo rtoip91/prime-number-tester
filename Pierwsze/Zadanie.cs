@@ -20,6 +20,12 @@ namespace Pierwsze
         protected int postep;
         protected String wynik = "pierwsza";
         protected String algorytm;
+        protected int threads;
+
+        public String get_watki()
+        {
+            return threads.ToString();
+        }
 
         public String get_algorytm()
         {
@@ -58,9 +64,10 @@ namespace Pierwsze
             postep = 0;
             wynik = "pierwsza";
             algorytm = "Bruteforce";
+            threads = 1;
         }
 
-        public Zadanie(BigInteger licz)
+        public Zadanie(BigInteger licz,int watki)
         {
             liczba = licz;
             czas_dodania = DateTime.Now;
@@ -68,6 +75,7 @@ namespace Pierwsze
             postep = 0;
             wynik = "pierwsza";
             algorytm = "Bruteforce";
+            threads = watki;
 
         }
 
@@ -110,17 +118,17 @@ namespace Pierwsze
         {
             BigInteger start = 2;
             BigInteger pierw = Sqrt(liczba);
-            BigInteger koniec = Sqrt(liczba) /(BigInteger)ile_watkow + 2;
+            BigInteger koniec = pierw /(BigInteger)ile_watkow + 2;
             BigInteger skok = koniec;
             przedzial_list.Add(new przedzial(start, koniec));
 
-            for (int i = 1; i < ile_watkow; i++)
+            for (int i = 0; i < ile_watkow; i++)
             {
                 start = start + skok;
                 koniec = koniec + skok;
                 if (koniec > liczba) koniec = liczba;
                 przedzial_list.Add(new przedzial(start, koniec));
-                if (i == ile_watkow - 1)
+                if (i == ile_watkow -1)
                 {
                     przedzial_list[i].ostatni = true;
                 }
@@ -179,7 +187,7 @@ namespace Pierwsze
         virtual public void licz ()
         {
             
-            int ilosc_watkow = 4;
+            int ilosc_watkow = threads;
             przedzial_list.Clear();
             watki.Clear();
 
